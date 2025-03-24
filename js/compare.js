@@ -1,24 +1,24 @@
-
 //car
 let carArr = [];
 
 class Car {
    
     constructor(nome, preco, alturaCacamba, alturaVeiculo, alturaSolo, capacidadeCarga, motor, potencia, volumeCacamba, roda, image){
-       this.nome = nome
-       this.preco = preco
-       this.alturaCacamba = alturaCacamba
-       this.slturaVeiculo = alturaVeiculo
-       this.alturaSolo = alturaSolo
-       this.capacidadeCarga = capacidadeCarga
-       this.motor = motor
-       this.potencia = potencia
-       this.volumeCacamba = volumeCacamba
-       this.roda = roda
+        this.nome = nome;
+        this.preco = preco;
+        this.alturaCacamba = alturaCacamba;
+        this.slturaVeiculo = alturaVeiculo;
+        this.alturaSolo = alturaSolo;
+        this.capacidadeCarga = capacidadeCarga;
+        this.motor = motor;
+        this.potencia = potencia;
+        this.volumeCacamba = volumeCacamba;
+        this.roda = roda;
+        this.image = image;
     }
-} 
+}
 
-// pesquisa na matriz se existe carClass retornando 1 se não retorna -1
+// search on array if exist carClass returning 1 if not return -1
 function GetCarArrPosition(arr, carClass) {
     for(let i = 0; i < arr.length; i++){
         if(arr[i].nome  === carClass.nome);
@@ -28,39 +28,38 @@ function GetCarArrPosition(arr, carClass) {
 }
 
 
+function SetCarToCompare(el, carClass) {
 
-function SetCarToCompare() {
+    let index = GetCarArrPosition(carArr,carClass);
 
-   let Checkbox = document.querySelectorAll('input[type="checkbox"]');
-
-    // if(carClass instanceof Car){       
-        if(Checkbox.checked){
-            Checkbox = 1
-            document.querySelector(Checkbox).addEventListener(SetCarToCompare())
-            console.log(Checkbox);
+    if (el.checked){
+        
+        if(carClass instanceof Car){       
+            if(carArr.length < 2){
+                carArr.push(carClass);
+                console.log(carArr);
+            }
+            else {
+                alert("Só é possivel selecionar no maximo dois veiculos");
+                el.checked = false;
+            }
         }
-        // else {
-        //     throw "Você precisa definir uma classe de carro";
-        // }
-}
+    }
+    else {
+        if (index !== -1) {
+            carArr.splice( index , 1);
+        }
+    }
 
+}
 function ShowCompare() {
     if(carArr.length < 2) {
         alert("Precisa marcar 2 carros para apresentar a comparação");
         return;
     }
-    else {
-        document.getElementById("compare").style.display = "inline";
-    }
-    if (carArr.length >= 3) {
-        alert("Só é posivel marcar no maximo 2 carros para a comparação!");
-        // return;
-    }
 
-    // UpdateCompareTable() 
-        
-    
-    
+    UpdateCompareTable();
+    document.getElementById("compare").style.display = "block";
 }
 
 function HideCompare(){

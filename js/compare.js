@@ -62,10 +62,23 @@ function ShowCompare() {
     document.getElementById("compare").style.display = "block";
 }
 
+
 function HideCompare(){
     document.getElementById("compare").style.display = "none"; 
 }
 
 function UpdateCompareTable() {
-    
+
+    for (let i = 0; i < carArr.length; i++) {
+        document.querySelector(`#compare_image_${i}`).innerHTML = `<img scr = ${carArr[i].image}>`;
+        document.querySelector(`#compare_modelo_${i}`).innerHTML = carArr[i].modelo;
+        document.querySelector(`#compare_alturacacamba_${i}`).innerHTML = carArr[i].alturacacamba;
+        document.querySelector(`#compare_alturasolo_${i}`).innerHTML = carArr[i].alturasolo;
+        document.querySelector(`#compare_capacidadecarga_${i}`).innerHTML = carArr[i].capacidadecarga;
+        document.querySelector(`#compare_motor_${i}`).innerHTML = carArr[i].motor;
+        document.querySelector(`#compare_potencia_${i}`).innerHTML = carArr[i].potencia;
+        document.querySelector(`#compare_volumecacamba_${i}`).innerHTML = carArr[i].volumecacamba;
+        document.querySelector(`#compare_roda_${i}`).innerHTML = carArr[i].roda;
+        document.querySelector(`#compare_preco_${i}`).innerHTML = carArr[i].preco;
+    }
 }

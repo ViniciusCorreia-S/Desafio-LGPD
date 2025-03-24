@@ -18,7 +18,7 @@ class Car {
     }
 } 
 
-// search on array if exist carClass returning 1 if not return -1
+// pesquisa na matriz se existe carClass retornando 1 se não retorna -1
 function GetCarArrPosition(arr, carClass) {
     for(let i = 0; i < arr.length; i++){
         if(arr[i].nome  === carClass.nome);
@@ -29,34 +29,28 @@ function GetCarArrPosition(arr, carClass) {
 
 
 
-function SetCarToCompare(el, carClass) {
-   
-    if(carClass instanceof Car){       
-        if(el.checked){
-               
-            
-        } else {
-          
-        } 
-    } else {
-        throw "Você precisa definir uma classe de carro";
-    }
+function SetCarToCompare() {
+
+   let Checkbox = document.querySelectorAll('input[type="checkbox"]');
+
+    // if(carClass instanceof Car){       
+        if(Checkbox.checked){
+            Checkbox = 1
+            document.querySelector(Checkbox).addEventListener(SetCarToCompare())
+            console.log(Checkbox);
+        }
+        // else {
+        //     throw "Você precisa definir uma classe de carro";
+        // }
 }
-
-let Checkbox = document.querySelectorAll('input[type="checkbox"]');
-Checkbox = []
-
-    for (let i = 0; Checkbox.checked = true; i++) {
-        Checkbox = 1;
-    } return;
 
 function ShowCompare() {
     if(carArr.length < 2) {
         alert("Precisa marcar 2 carros para apresentar a comparação");
-        // return;
+        return;
     }
     else {
-        document.getElementById("compare").style.display = "block";
+        document.getElementById("compare").style.display = "inline";
     }
     if (carArr.length >= 3) {
         alert("Só é posivel marcar no maximo 2 carros para a comparação!");

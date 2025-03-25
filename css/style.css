@@ -18,12 +18,13 @@ div#carousel {
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     img {
         width: 60vw;
         border-radius: 15px;
-        /* border: 4px solid #142964c3; */
+        border: 1px solid black;
         box-shadow: black 0px 0px 30px;
     }
 }

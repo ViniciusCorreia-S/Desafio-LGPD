@@ -7,7 +7,7 @@ class Car {
         this.nome = nome;
         this.preco = preco;
         this.alturaCacamba = alturaCacamba;
-        this.slturaVeiculo = alturaVeiculo;
+        this.alturaVeiculo = alturaVeiculo;
         this.alturaSolo = alturaSolo;
         this.capacidadeCarga = capacidadeCarga;
         this.motor = motor;
@@ -70,15 +70,18 @@ function HideCompare(){
 function UpdateCompareTable() {
 
     for (let i = 0; i < carArr.length; i++) {
-        document.querySelector(`#compare_image_${i}`).innerHTML = `<img scr = ${carArr[i].image}>`;
-        document.querySelector(`#compare_modelo_${i}`).innerHTML = carArr[i].modelo;
-        document.querySelector(`#compare_alturacacamba_${i}`).innerHTML = carArr[i].alturacacamba;
-        document.querySelector(`#compare_alturasolo_${i}`).innerHTML = carArr[i].alturasolo;
-        document.querySelector(`#compare_capacidadecarga_${i}`).innerHTML = carArr[i].capacidadecarga;
+       
+        document.querySelector(`#compare_modelo_${i}`).innerHTML = carArr[i].nome;
+        console.log(carArr[i].nome);
+        document.querySelector(`#compare_alturacacamba_${i}`).innerHTML = carArr[i].alturaCacamba;
+        document.querySelector(`#compare_alturaveiculo_${i}`).innerHTML = carArr[i].alturaVeiculo;
+        document.querySelector(`#compare_alturasolo_${i}`).innerHTML = carArr[i].alturaSolo;
+        document.querySelector(`#compare_capacidadecarga_${i}`).innerHTML = carArr[i].capacidadeCarga;
         document.querySelector(`#compare_motor_${i}`).innerHTML = carArr[i].motor;
         document.querySelector(`#compare_potencia_${i}`).innerHTML = carArr[i].potencia;
-        document.querySelector(`#compare_volumecacamba_${i}`).innerHTML = carArr[i].volumecacamba;
+        document.querySelector(`#compare_volumecacamba_${i}`).innerHTML = carArr[i].volumeCacamba;
         document.querySelector(`#compare_roda_${i}`).innerHTML = carArr[i].roda;
         document.querySelector(`#compare_preco_${i}`).innerHTML = carArr[i].preco;
+        document.querySelector(`#compare_image_${i}`).innerHTML = `<img src = "${carArr[i].image}"></img>`;
     }
 }

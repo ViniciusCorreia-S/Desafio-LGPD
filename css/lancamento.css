@@ -57,6 +57,9 @@ table {
   th, td {
     text-align: left;
     padding: 8px;
+    img {
+        width: 110%;
+    }
   }
 
   td:nth-child(1) {  
@@ -72,7 +75,7 @@ div#compare {
     width: 50vw;
     max-width: 800px;
     min-width: 400px;
-    height: 80vh;
+    height: 70vh;
     max-height: 700px;
     min-height: 350px;
     background: #fff;

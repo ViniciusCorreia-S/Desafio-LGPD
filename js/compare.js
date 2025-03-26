@@ -27,7 +27,6 @@ function GetCarArrPosition(arr, carClass) {
     return -1;
 }
 
-
 function SetCarToCompare(el, carClass) {
 
     let index = GetCarArrPosition(carArr,carClass);

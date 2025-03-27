@@ -2,7 +2,7 @@
 let carArr = [];
 
 class Car {
-   
+    //Exportar a lista do html para o JS
     constructor(nome, preco, alturaCacamba, alturaVeiculo, alturaSolo, capacidadeCarga, motor, potencia, volumeCacamba, roda, image){
         this.nome = nome;
         this.preco = preco;
@@ -28,19 +28,20 @@ function GetCarArrPosition(arr, carClass) {
 }
 
 function SetCarToCompare(el, carClass) {
-
-    let index = GetCarArrPosition(carArr,carClass);
+    
+    let index = GetCarArrPosition(carArr,carClass);//variavel para armazenar a posição do carro no array
 
     if (el.checked){
         
-        if(carClass instanceof Car){       
+        if(carClass instanceof Car){  
+            
             if(carArr.length < 2){
-                carArr.push(carClass);
+                carArr.push(carClass);//adiciona o carro no array
                 console.log(carArr);
             }
             else {
                 alert("Só é possivel selecionar no maximo dois veiculos");
-                el.checked = false;
+                el.checked = false;//desmarca o checkbox
             }
         }
     }
@@ -49,8 +50,8 @@ function SetCarToCompare(el, carClass) {
             carArr.splice( index , 1);
         }
     }
-
 }
+//se a lista de carros for menor que 2 não deixa comparar
 function ShowCompare() {
     if(carArr.length < 2) {
         alert("Precisa marcar 2 carros para apresentar a comparação");
@@ -59,15 +60,16 @@ function ShowCompare() {
 
     UpdateCompareTable();
     document.getElementById("compare").style.display = "block";
+    document.getElementById("compare").scrollIntoView({behavior:"smooth"});
 }
 
 
 function HideCompare(){
-    document.getElementById("compare").style.display = "none"; 
+    document.getElementById("compare").style.display = "none"; //esconde a tabela de comparação
 }
-
+//função para adicionar a informações na tabela de comparação
 function UpdateCompareTable() {
-
+    //loop para percorrer o array
     for (let i = 0; i < carArr.length; i++) {
        
         document.querySelector(`#compare_modelo_${i}`).innerHTML = carArr[i].nome;

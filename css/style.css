@@ -22,9 +22,8 @@ div#carousel {
     justify-content: center;
     align-items: center;
     img {
-        width: 60vw;
+        width: 50vw;
         border-radius: 15px;
-        border: 1px solid black;
         box-shadow: black 0px 0px 30px;
     }
 }
@@ -39,8 +38,7 @@ div#carousel-title a {
 div#carousel-title  {
     display: block;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
@@ -65,6 +63,10 @@ header {
 header div {
     display: inline;
     vertical-align: middle;
+}
+
+header .logo {
+    width: 10%;
 }
 
 header nav {
@@ -92,10 +94,6 @@ nav li {
     display: inline;
     list-style: none;
 }
-/* nav li:hover {
-    text-decoration-line: overline;
-    color: rgb(205, 0, 0);
-} */
 
 main {
     min-height: calc(100% - 167px);
@@ -121,6 +119,7 @@ span.redesociais {
 footer {
     background: #1B357E;
     padding: 20px;
+    flex: 1;
 }
 
 footer div {
@@ -130,12 +129,52 @@ footer div {
 }
 
 button:hover {
-    background: #1b357e;
+    background-color: rgb(67, 67, 67);
+    box-shadow: 0px 0px 10px 0px rgb(67, 67, 67);
 }
 button {
     background: #1351d8;
     color: #fff;
     border: 0px;
     border-radius: 10px;
+    transition: 0.5s;
+    border-radius: 20px;
 }
 
+@media (max-width: 1400px) {
+    div#carousel {
+        height: 70vh;
+    }
+    div#carousel-title a {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 375px) {
+    div#carousel {
+        height: 50vh;
+        img {
+            width: 90vw;
+        }
+    }
+    div#carousel-title a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    header nav {
+        width: 100%;
+    }
+    header nav a {
+        font-size: 16px;
+    }
+    header .logo {
+        width: 20%;
+    }
+    header nav a {
+        font-size: 0.8rem;
+    }
+    span.redesociais {
+        display: none;
+    }
+}

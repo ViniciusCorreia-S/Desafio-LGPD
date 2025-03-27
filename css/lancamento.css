@@ -1,3 +1,9 @@
+.descrição {
+    text-align: center;
+    font-size: 1rem;
+    margin: 2%;
+    font-weight: 600;
+}
 
 ul.modelcars {
     display: block;
@@ -44,6 +50,14 @@ img.photocar {
     text-align: left;
     font-size: 10px;
 }
+button {
+    width: 200px;
+    height: 40px;
+}
+button:hover {
+    width: 205px;
+    height: 42px;
+}
 
 table {
     border-collapse: collapse;
@@ -75,7 +89,7 @@ div#compare {
     width: 50vw;
     max-width: 800px;
     min-width: 400px;
-    height: 70vh;
+    height: 100vh;
     max-height: 700px;
     min-height: 350px;
     background: #fff;

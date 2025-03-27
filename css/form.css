@@ -22,6 +22,10 @@ input:focus-visible {
 select:focus-visible {
     outline: none;
 }
+textarea:focus-visible {
+    outline: none;
+}
+
 
 main div {
     display: inline-block;
@@ -47,6 +51,11 @@ button {
     height: 40px;
     margin-right: 8px;
     float: right;
+}
+
+button:hover {
+    width: 210px;
+    height: 42px;
 }
 
 .titulo {

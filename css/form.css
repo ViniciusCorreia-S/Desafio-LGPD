@@ -26,6 +26,9 @@ textarea:focus-visible {
     outline: none;
 }
 
+main {
+    height: 80%;
+}
 
 main div {
     display: inline-block;
@@ -44,7 +47,6 @@ h2 {
     text-align: left;
     font-weight: 800;
 }
-
 
 button {
     width: 200px;

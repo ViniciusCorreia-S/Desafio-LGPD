@@ -28,6 +28,8 @@ div#carousel {
     }
 }
 
+
+
 div#carousel-title a {
     text-decoration: none;
     font-size: 1.3rem;
@@ -137,7 +139,7 @@ button {
     color: #fff;
     border: 0px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: 0.8s;
     border-radius: 20px;
 }
 

@@ -18,15 +18,24 @@ ul.modelcars li {
     vertical-align: top;
 }
 
-img.photocar {
+.photocar {
     display: block;
     width: 250px;
+    overflow: hidden; /*Não deixa a imagem sair da div */
+    
+    /*transition: transform 0.3s ease; Deixar a animação mais suave */
+}
+img.photocar :hover {
+    transform: scale(1.2);/* Aumenta o tamanho da imagem */
 }
 
 .checkbox {
     width: 30px;
     height: 30px;
     border: 1px solid #1b357e;
+}
+.checkbox :hover {
+    cursor: pointer;
 }
 
 .infocar div {
@@ -55,8 +64,7 @@ button {
     height: 40px;
 }
 button:hover {
-    width: 205px;
-    height: 42px;
+    width: 215px;
 }
 
 table {
@@ -99,4 +107,25 @@ div#compare {
     padding: 10px;
     -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
     box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
+}
+
+@media (max-width: 375px) {
+    .descrição {
+        text-align: justify;
+        margin: 20px;
+    }
+    div#compare {
+        min-width: 300px;
+        width: 85vw;
+        left: 5vw;
+    }
+    table {
+        width: 100%;
+    }
+    th, td {
+        font-size: 0.9rem;
+        img {
+            width: 25vw;
+        }
+      }
 }

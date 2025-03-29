@@ -34,7 +34,6 @@ main div {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    padding-top: 30px;
     padding-bottom: 30px;
 }
 
@@ -49,6 +48,7 @@ h2 {
 }
 
 button {
+    display: block;
     width: 200px;
     height: 40px;
     margin-right: 8px;
@@ -62,4 +62,26 @@ button:hover {
 
 .titulo {
     margin-left: 8px;
+}
+
+@media (max-width: 1400px) {
+    body {
+        height: 80vh;
+    }
+    main {
+        height: 70vh;
+    }
+    .forms {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        height: 90vh;
+    }
+    main {
+        height: 80vh;
+    }
+    
 }

@@ -1,5 +1,3 @@
-
-
 //carousel
 
 //Array storage class
@@ -61,3 +59,25 @@ class Carousel {
         }
     }
 }
+
+// const btnPrev = document.getElementById('btn-Prev');
+// const btnNext = document.getElementById('btn-Next');
+
+
+// function btnPrev() {
+//     if (Carousel._sequence >= Carousel._size) {
+//         Carousel._sequence = -1;
+//     }
+// }
+
+// function btnNext() {
+//     if (Carousel._sequence >= Carousel._size -1) {
+//         Carousel._sequence = 0;
+//     }
+//     else {
+//         Carousel._sequence++;
+//     }
+// }
+
+// btnPrev.addEventListener('click' , () => btnPrev() );
+// btnNext.addEventListener('click' , () => btnNext() );

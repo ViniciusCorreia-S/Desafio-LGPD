@@ -7,8 +7,10 @@
     <title>Ford</title>    
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    
+    <link  rel="icon" href="https://resources.dealer-asset.co/themes/fmlds/latest/android-chrome-192x192.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>       
         <!-- Logo Ford -->
@@ -18,23 +20,44 @@
         <nav>
             <!-- Menu -->
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="lancamento.html">Lançamento</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
+                <div class="menu">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                </div>
+                <div class="menu">
+                    <li>
+                        <a href="lancamento.html">
+                            <i class="fa-solid fa-car"></i>
+                            Lançamento
+                        </a>
+                    </li>
+                </div>
+                <div class="menu">
+                    <li>
+                        <a href="contato.html">
+                            <i class="fa-solid fa-phone"></i>
+                            Contato
+                        </a>
+                    </li>
+                </div>
             </ul>
         </nav>
 
     </header>
     <main>
-        <div id="carousel">
+        <div id="container">
+            <button id="btn-Prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+            <div id="carousel">
+                
+            </div>
+
+            <button id="btn-Next"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
-        
         <div id="carousel-title">
         </div>
         <!-- link para aquivo JS -->
@@ -60,7 +83,7 @@
         </nav>
         <!-- copyright -->
         <div>
-           <img src="img/ford-96.png" width="70"  />
+           <a href="https://www.ford.com.br/copyright/"><img src="img/ford-96.png" width="70" /></a>
         </div>
     </footer> 
      

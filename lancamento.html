@@ -8,7 +8,8 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/lancamento.css" rel="stylesheet">
-    
+    <link  rel="icon" href="https://resources.dealer-asset.co/themes/fmlds/latest/android-chrome-192x192.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>  
@@ -19,15 +20,30 @@
         <!-- Menu -->
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="lancamento.html">Lançamento</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
+                <div class="menu">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                </div>
+                <div class="menu">
+                    <li>
+                        <a href="lancamento.html">
+                            <i class="fa-solid fa-car"></i>
+                            Lançamento
+                        </a>
+                    </li>
+                </div>
+                <div class="menu">
+                    <li>
+                        <a href="contato.html">
+                            <i class="fa-solid fa-phone"></i>
+                            Contato
+                        </a>
+                    </li>
+                </div>
             </ul>
         </nav>
 
@@ -98,7 +114,7 @@
             </ul>
         </div>
         <div style="text-align: center;padding-bottom: 20px;">
-            <button type="button" onclick="ShowCompare()">Comparar Carros</button>
+            <button class="button" type="button" onclick="ShowCompare()">Comparar Carros</button>
         </div>
         
         <script src="js/compare.js"></script>
@@ -114,7 +130,7 @@
             </ul>
         </nav>
         <div>
-           <img src="img/ford-96.png" width="70"  />
+            <a href="https://www.ford.com.br/copyright/"><img src="img/ford-96.png" width="70" /></a>
         </div>
     </footer> 
         <!-- Tabela de comparação -->
@@ -181,7 +197,7 @@
 
             <!-- Botão para fechar a tabela -->
             <div style="text-align: center;padding-bottom: 20px;">
-                <button type="button" style="height: 40px; width: 200px; margin-top: 5%;" onclick="HideCompare()">Fechar</button>
+                <button class="button" type="button" style="height: 40px; width: 200px; margin-top: 5%;" onclick="HideCompare()">Fechar</button>
             </div> 
         </div> 
 </body>

@@ -8,7 +8,9 @@
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
-    <script src="js/form.js"></script>
+    <link  rel="icon" href="https://resources.dealer-asset.co/themes/fmlds/latest/android-chrome-192x192.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <header>       
@@ -17,15 +19,30 @@
         </div>
         <nav>
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="lancamento.html">Lançamento</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
+                <div class="menu">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                </div>
+                <div class="menu">
+                    <li>
+                        <a href="lancamento.html">
+                            <i class="fa-solid fa-car"></i>
+                            Lançamento
+                        </a>
+                    </li>
+                </div>
+                <div class="menu">
+                    <li>
+                        <a href="contato.html">
+                            <i class="fa-solid fa-phone"></i>
+                            Contato
+                        </a>
+                    </li>
+                </div>
             </ul>
         </nav>
 
@@ -38,22 +55,23 @@
             </div>
             <div>
                 <h2 class="titulo">Sobre Você</h2>
-            <form onsubmit="Post(this);/*return false*/;" action="index.html" method="get">
-                <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
-                <input type="email" name="email" placeholder="E-MAIL*" class="fordform" required>
-                <input type="tel" name="telefone" placeholder="TELEFONE*" class="fordform" id="tel" required>
-                <select name="contato" class="fordform" required>
-                    <option selected disabled value="">TIPO DE CONTATO</option>
-                    <option value="Elogio">Elogio</option>
-                    <option value="Reclamação">Reclamação</option>
-                    <option value="Solicitação">Solicitação</option>
-                </select>
-                <textarea class="fordform"  placeholder="Digite sua mensagem aqui" required></textarea>
-                <!-- Botão enviar -->
-                <a href="index.html"><button type="submit">Enviar</button></a>
-            </form>
+                <form onsubmit="Post(this); /*return false*/; "action="index.html" method="get">
+                    <input type="text" name="nome" placeholder="NOME*" class="fordform" required>
+                    <input type="email" name="email" placeholder="E-MAIL*" class="fordform" required>
+                    <input type="tel" name="telefone" placeholder="TELEFONE*" class="fordform" id="tel" required>
+                    <select name="contato" class="fordform" required>
+                        <option selected disabled value="">TIPO DE CONTATO*</option>
+                        <option value="Elogio">Elogio</option>
+                        <option value="Reclamação">Reclamação</option>
+                        <option value="Solicitação">Solicitação</option>
+                    </select>
+                    <textarea class="fordform"  placeholder="Digite sua mensagem aqui" required></textarea>
+                    <!-- Botão enviar -->
+                    <a href="index.html"><button class="button" type="submit">Enviar</button></a>
+                </form>
             </div>
         </div>
+        <script src="js/form.js"></script>
     </main>
     <footer>
         <nav id="social">
@@ -65,7 +83,7 @@
             </ul>
         </nav>
         <div>
-           <img src="img/ford-96.png" width="70"/>
+            <a href="https://www.ford.com.br/copyright/"><img src="img/ford-96.png" width="70" /></a>
         </div>
     </footer>
 

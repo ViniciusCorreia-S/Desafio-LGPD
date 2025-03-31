@@ -1,7 +1,7 @@
 .descrição {
     text-align: center;
     font-size: 1rem;
-    margin: 2%;
+    margin: 4%;
     font-weight: 600;
 }
 
@@ -15,12 +15,16 @@ ul.modelcars li {
     display: inline-block;
     text-align: left;
     width: 300px;
+    padding: 12px;
     vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px black;
+    margin-right: 10px;
 }
 
 .photocar {
     display: block;
-    width: 250px;
+    width: 280px;
 }
 
 .checkbox {
@@ -37,7 +41,7 @@ ul.modelcars li {
 }
 
 .info {
-    width: 200px;
+    width: 210px;
     vertical-align: top;
 }
 
@@ -51,7 +55,7 @@ ul.modelcars li {
 .textprice {
     display: block;
     text-align: left;
-    font-size: 10px;
+    font-size: 12px;
 }
 button {
     width: 200px;

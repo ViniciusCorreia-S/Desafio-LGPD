@@ -47,6 +47,7 @@ header ul {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: max-content;
 }
 
 ul {
@@ -58,6 +59,7 @@ header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
     padding: 10px;
+    box-shadow: 0px 0px 10px 0px black;
 }
 
 header div {
@@ -72,7 +74,8 @@ header .logo {
 header nav {
     display: inline-block;
     vertical-align: middle;
-    width: 80vw;
+    width: max-content;
+    margin-left: 50%;
 }
 
 header nav .menu a {
@@ -85,11 +88,10 @@ header nav .menu a {
 
 header nav a {
     color: #1351d8;
-    font-size: 20px;
+    font-size: 1.2rem;
     text-decoration: none;
     font-weight: 900;
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-right: 20px;
 }
 
 header nav .menu a:hover {

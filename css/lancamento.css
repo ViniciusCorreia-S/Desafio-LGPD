@@ -21,12 +21,6 @@ ul.modelcars li {
 .photocar {
     display: block;
     width: 250px;
-    overflow: hidden; /*Não deixa a imagem sair da div */
-    
-    /*transition: transform 0.3s ease; Deixar a animação mais suave */
-}
-img.photocar :hover {
-    transform: scale(1.2);/* Aumenta o tamanho da imagem */
 }
 
 .checkbox {

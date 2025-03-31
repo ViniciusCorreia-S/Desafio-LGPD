@@ -60,6 +60,7 @@ function ShowCompare() {
 
     UpdateCompareTable();
     document.getElementById("compare").style.display = "block";
+    document
     document.getElementById("compare").scrollIntoView({behavior:"smooth"});
 }
 

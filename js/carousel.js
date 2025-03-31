@@ -29,7 +29,7 @@ class Carousel {
     }
 
     static Next(){
-        document.querySelectorAll('#carousel a').forEach(Element => Element.style.display = 'none');//insere a imagem o display none para deixa-la invisivel
+        document.querySelectorAll('#carousel a').forEach(Element => Element.style.display = 'none');//insere na imagem o display none para deixa-la invisivel
         document.querySelectorAll('#carousel-title a').forEach(Element => Element.style.display = 'none');//insere no titulo o display none para deixa-lo invisivel
 
         document.querySelectorAll(`#carousel a:nth-child(${Carousel._sequence +1})`).forEach(Element => Element.style.display = 'inline');
@@ -59,25 +59,3 @@ class Carousel {
         }
     }
 }
-
-// const btnPrev = document.getElementById('btn-Prev');
-// const btnNext = document.getElementById('btn-Next');
-
-
-// function btnPrev() {
-//     if (Carousel._sequence >= Carousel._size) {
-//         Carousel._sequence = -1;
-//     }
-// }
-
-// function btnNext() {
-//     if (Carousel._sequence >= Carousel._size -1) {
-//         Carousel._sequence = 0;
-//     }
-//     else {
-//         Carousel._sequence++;
-//     }
-// }
-
-// btnPrev.addEventListener('click' , () => btnPrev() );
-// btnNext.addEventListener('click' , () => btnNext() );

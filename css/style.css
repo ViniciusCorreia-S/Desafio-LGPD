@@ -91,7 +91,7 @@ header nav a {
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: 900;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 header nav .menu a:hover {
@@ -134,13 +134,11 @@ footer {
     background: #1B357E;
     padding: 20px;
     margin-top: 2%;
-    flex: 1;
 }
 
 footer div {
     display: inline;
     float: right;
-    margin-right: 40px;
 }
 
 .button:hover {
@@ -157,9 +155,21 @@ footer div {
     box-shadow: 0px 5px 0px 0px black;
 }
 
+/* Responsividade do Home */
 @media (max-width: 1400px) {
     div#carousel {
         height: 70vh;
+    }
+    div#carousel-title a {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 650px) {
+    div#carousel {
+        height: 50vh;
+        img {
+            width: 90vw;
+        }
     }
     div#carousel-title a {
         font-size: 1rem;
@@ -177,20 +187,24 @@ footer div {
     }
 }
 
+/* header */
 @media (max-width: 375px) {
-    header nav {
-        width: 100%;
-    }
-    header nav a {
-        font-size: 16px;
-    }
     header .logo {
         width: 20%;
     }
-    header nav a {
-        font-size: 0.8rem;
+    header nav {
+        margin-left: 0;
     }
+    header nav a {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+}
+
+/* footer */
+@media (max-width: 375px) {
     span.redesociais {
         display: none;
     }
+
 }

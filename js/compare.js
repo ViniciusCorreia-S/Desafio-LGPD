@@ -42,7 +42,7 @@ function SetCarToCompare(el, carClass) {
             else {
                 alert("Só é possivel selecionar no maximo dois veiculos");
                 el.checked = false;//desmarca o checkbox
-            }
+            } 
         }
     }
     else {
@@ -83,7 +83,7 @@ function UpdateCompareTable() {
         document.querySelector(`#compare_potencia_${i}`).innerHTML = carArr[i].potencia;
         document.querySelector(`#compare_volumecacamba_${i}`).innerHTML = carArr[i].volumeCacamba;
         document.querySelector(`#compare_roda_${i}`).innerHTML = carArr[i].roda;
-        document.querySelector(`#compare_preco_${i}`).innerHTML = carArr[i].preco;
+        document.querySelector(`#compare_preco_${i}`).innerHTML = `R$ ${carArr[i].preco};`
         document.querySelector(`#compare_image_${i}`).innerHTML = `<img src = "${carArr[i].image}"></img>`;
     }
 }

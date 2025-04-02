@@ -1,16 +1,38 @@
+.car {
+    animation-name: car;
+    animation-duration: 1s;
+}
+
 .fordform {
     display: block;
     width: 300px;
     border: 1px solid #cccccc;
     border-radius: 10px;
     height: 26px;
-    margin: 8px;
+    margin: 15px;
     font-size: 13px;
     padding: 5px;
 }
 
 .fordform:hover {
     box-shadow: 0px 0px 3px 0px #1c57fb;    
+}
+
+@keyframes car {
+    from {
+       right: 1000px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+div.form {
+    box-shadow: 0px 0px 8px 0px #000000;
+    border-radius: 10px;
+    padding: 30px;
+    animation-name: car;
+    animation-duration: 1s;
 }
 
 select.fordform {
@@ -31,12 +53,12 @@ textarea:focus-visible {
 }
 
 main {
-    height: 80%;
+    height: 70vh;
 }
 
 main div {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     text-align: left;
     padding-bottom: 30px;
 }
@@ -44,6 +66,8 @@ main div {
 .forms {
     display: block;
     text-align: center;
+    margin-top: 5%;
+    height: 30%;
 }
 
 h2 {
@@ -55,13 +79,13 @@ button {
     display: block;
     width: 200px;
     height: 40px;
+    margin-top: 15px;
     margin-right: 8px;
     float: right;
 }
 
 button:hover {
     width: 210px;
-    height: 42px;
 }
 
 .titulo {

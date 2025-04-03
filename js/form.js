@@ -28,3 +28,10 @@ function Enviar(data) {
         alert('Obrigado sr(a) ' + data.nome + ' os seus dados foram encaminhados com sucesso');
     }
 }
+
+function Car () {
+    setInterval(() => {
+        document.querySelector('#car1').style.display = 'none';
+        document.querySelector('#car2').style.display = 'block';
+    }, 2750);
+}

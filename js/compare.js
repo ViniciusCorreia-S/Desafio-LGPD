@@ -83,7 +83,7 @@ function UpdateCompareTable() {
         document.querySelector(`#compare_potencia_${i}`).innerHTML = carArr[i].potencia;
         document.querySelector(`#compare_volumecacamba_${i}`).innerHTML = carArr[i].volumeCacamba;
         document.querySelector(`#compare_roda_${i}`).innerHTML = carArr[i].roda;
-        document.querySelector(`#compare_preco_${i}`).innerHTML = `R$ ${carArr[i].preco};`
+        document.querySelector(`#compare_preco_${i}`).innerHTML = `R$ ${carArr[i].preco}0,00`;
         document.querySelector(`#compare_image_${i}`).innerHTML = `<img src = "${carArr[i].image}"></img>`;
     }
 }

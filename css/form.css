@@ -1,6 +1,10 @@
-.car {
+.carro {
     animation-name: car;
     animation-duration: 1s;
+    #car2 {
+        display: none;
+        width: 600px;
+    }
 }
 
 .fordform {
@@ -18,21 +22,19 @@
     box-shadow: 0px 0px 3px 0px #1c57fb;    
 }
 
-@keyframes car {
-    from {
-       right: 1000px;
-    }
-    to {
-        right: 0px;
-    }
-}
-
 div.form {
     box-shadow: 0px 0px 8px 0px #000000;
     border-radius: 10px;
     padding: 30px;
-    animation-name: car;
-    animation-duration: 1s;
+}
+
+@keyframes car {
+    from {
+       transform: translate(100vw, 0%);
+    }
+    to {
+        transform: translate(0, 0);
+    }
 }
 
 select.fordform {
@@ -68,6 +70,8 @@ main div {
     text-align: center;
     margin-top: 5%;
     height: 30%;
+    animation-name: car;
+    animation-duration: 2.7s;
 }
 
 h2 {
@@ -101,6 +105,10 @@ button:hover {
     }
     .forms {
         margin-top: 5%;
+    }
+    .car img {
+        width: 80%;
+        margin-left: 20%;
     }
 }
 

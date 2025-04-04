@@ -53,7 +53,6 @@ function SetCarToCompare(el, carClass) {
             }
         }
     }
-    console.log(carArr);
 }
 //se a lista de carros for menor que 2 não deixa comparar
 function ShowCompare() {
@@ -78,7 +77,6 @@ function UpdateCompareTable() {
     for (let i = 0; i < carArr.length; i++) {
        
         document.querySelector(`#compare_modelo_${i}`).innerHTML = carArr[i].nome;
-        console.log(carArr[i].nome);
         document.querySelector(`#compare_alturacacamba_${i}`).innerHTML = carArr[i].alturaCacamba;
         document.querySelector(`#compare_alturaveiculo_${i}`).innerHTML = carArr[i].alturaVeiculo;
         document.querySelector(`#compare_alturasolo_${i}`).innerHTML = carArr[i].alturaSolo;

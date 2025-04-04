@@ -37,7 +37,6 @@ function SetCarToCompare(el, carClass) {
             
             if(carArr.length < 2){
                 carArr.push(carClass);//adiciona o carro no array
-                console.log(carArr);
             }
             else {
                 alert("Só é possivel selecionar no maximo dois veiculos");
@@ -46,10 +45,15 @@ function SetCarToCompare(el, carClass) {
         }
     }
     else {
-        if (index !== -1) {
-            carArr.splice( index , 1);
+        carArr.splice( index , 2);
+        let checkbox = document.querySelectorAll(".checkbox");
+        for(let i = 0; i < checkbox.length; i++){
+            if(checkbox[i].checked){
+                checkbox[i].checked = false;
+            }
         }
     }
+    console.log(carArr);
 }
 //se a lista de carros for menor que 2 não deixa comparar
 function ShowCompare() {

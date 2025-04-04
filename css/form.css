@@ -22,6 +22,8 @@
     box-shadow: 0px 0px 3px 0px #1c57fb;    
 }
 
+
+
 div.form {
     box-shadow: 0px 0px 8px 0px #000000;
     border-radius: 10px;
@@ -72,6 +74,29 @@ main div {
     height: 30%;
     animation-name: car;
     animation-duration: 2.7s;
+    
+    
+}
+
+.Termos_de_uso {
+    p {
+        width: 350px;
+        height: 50px;
+        text-align: justify;
+        font-size: 0.8rem;
+        color: black;        
+    }
+    .text_checkbox {
+        width: 330px;
+        height: 50px;
+        font-size: 0.8rem;
+
+        input {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+    }
 }
 
 h2 {

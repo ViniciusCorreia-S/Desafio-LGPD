@@ -3,12 +3,14 @@
 
 class contato {
     ////Exportar a lista do html para o JS
-    constructor (nome, email, telefone, contato ,mensagem) {
+    constructor (nome, email, telefone, contato ,mensagem, Termo, Notificação) {
         this.nome = nome;
         this.email = email;
         this.telefone = telefone;
         this.contato = contato;
-        this.mensagem = mensagem
+        this.mensagem = mensagem;
+        this.Termo = Termo;
+        this.Notificação = Notificação;
     }
 }
 //função para enviar os dados
@@ -18,7 +20,9 @@ function Post(form) {
             form.elements.namedItem("email").value, 
             form.elements.namedItem("telefone").value, 
             form.elements.namedItem("contato").value,
-            form.elements.namedItem("mensagem").value);
+            form.elements.namedItem("mensagem").value,
+            form.elements.namedItem("Termos").checked,
+            form.elements.namedItem("Notificações").checked);
             console.table(data);
   Enviar(data);
 }
@@ -29,9 +33,30 @@ function Enviar(data) {
     }
 }
 
+function Button_enable(el) {
+
+    const button = document.querySelector('.button');
+
+    if (el.checked) {
+        button.style.background = '#1351d8';
+        button.disabled = false;
+    }
+    else {
+        button.style.background = 'gray';
+        button.disabled = true;
+    }
+}
+
 function Car () {
-    setInterval(() => {
+    setTimeout(() => {
         document.querySelector('#car1').style.display = 'none';
         document.querySelector('#car2').style.display = 'block';
-    }, 2750);
+        // document.querySelector('#car3').style.display = 'block';
+    }, 3000);
+
+    setTimeout(() => {
+        document.querySelector('#car2').style.display = 'none';
+        document.querySelector('#car3').style.display = 'block';
+    }, 3300);
+
 }

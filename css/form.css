@@ -1,7 +1,14 @@
+html {
+    overflow-x: hidden;
+}
+
 .carro {
     animation-name: car;
     animation-duration: 1s;
     #car2 {
+        display: none;
+    }
+    #car3 {
         display: none;
         width: 600px;
     }
@@ -16,6 +23,11 @@
     margin: 15px;
     font-size: 13px;
     padding: 5px;
+}
+
+textarea {
+    max-width: 300px;
+    max-height: 70px;
 }
 
 .fordform:hover {

@@ -38,6 +38,7 @@ div.form {
     box-shadow: 0px 0px 8px 0px #000000;
     border-radius: 10px;
     padding: 30px;
+    margin-bottom: 10%;
 }
 
 @keyframes car {
@@ -88,6 +89,12 @@ main div {
     
 }
 
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
 .Termos_de_uso {
     p {
         width: 350px;
@@ -136,14 +143,22 @@ button:hover {
         height: 80vh;
     }
     main {
-        height: 70vh;
+        height: 80vh;
     }
     .forms {
         margin-top: 5%;
     }
+    div.form {
+        margin-bottom: 20%;
+    }
     .car img {
         width: 80%;
         margin-left: 20%;
+    }
+    footer {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
     }
 }
 

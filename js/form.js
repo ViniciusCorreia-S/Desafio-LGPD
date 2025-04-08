@@ -3,13 +3,14 @@
 
 class contato {
     ////Exportar a lista do html para o JS
-    constructor (nome, email, telefone, contato ,mensagem, Termo, Notificação) {
+    constructor (nome, email, cpf, telefone, contato ,mensagem, Termos, Notificação) {
         this.nome = nome;
         this.email = email;
+        this.cpf = cpf;
         this.telefone = telefone;
         this.contato = contato;
         this.mensagem = mensagem;
-        this.Termo = Termo;
+        this.Termos = Termos;
         this.Notificação = Notificação;
     }
 }
@@ -18,6 +19,7 @@ function Post(form) {
     //variavel para armazenar os dados
   let data = new contato(form.elements.namedItem("nome").value,
             form.elements.namedItem("email").value, 
+            form.elements.namedItem("CPF").value, 
             form.elements.namedItem("telefone").value, 
             form.elements.namedItem("contato").value,
             form.elements.namedItem("mensagem").value,

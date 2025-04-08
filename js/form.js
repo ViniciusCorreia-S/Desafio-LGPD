@@ -58,5 +58,4 @@ function Car () {
         document.querySelector('#car2').style.display = 'none';
         document.querySelector('#car3').style.display = 'block';
     }, 3300);
-
 }
